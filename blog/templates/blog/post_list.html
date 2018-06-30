@@ -1,5 +1,6 @@
 <div>
     <h1><a href="/">Django Girls Blog of 6/30</a></h1>
+    <hr><hr>
 </div>
 
 {% for post in posts %}
@@ -7,5 +8,6 @@
         <p>published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
+        <hr>
     </div>
 {% endfor %}
